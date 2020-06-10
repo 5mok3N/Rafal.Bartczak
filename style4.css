@@ -1,0 +1,298 @@
+body {
+    color: #792485;
+    background-color: #EE94B4;
+    font-family: Impact;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 70vh;
+    width: 80%;
+}
+
+#logo {
+    margin: 0 auto;
+    background-color: #DDA5E3;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 35px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+#logo p {
+    display: inline;
+}
+
+#content {
+    width: 20%;
+    background-color: #DDA5E3;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 35px;
+    height: 100px;
+    position: relative;
+}
+
+#description {
+    width: 60%;
+    background-color: #DDA5E3;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    float: left;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+#description::after {
+    clear: both;
+}
+
+#container::after {
+    clear: both;
+}
+
+#footer {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    bottom: 0;
+    float: none;
+    display: block;
+    text-align: center;
+}
+
+.tile {
+    margin: 0 auto;
+    width: 95%;
+    height: 40px;
+    background-color: #792485;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.tilee {
+    margin: 10px;
+    width: 410px;
+    height: 40px;
+    background-color: #A95BA6;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tile:hover {
+    background-color: #A7A7A7;
+}
+
+a.tilelink {
+    color: #EE94B4;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#prawa {
+    color: #792485;
+}
+
+.link {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+
+a {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+#logoo {
+    margin-top: 10px;
+}
+
+#logoo2 {
+    margin-top: 10px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    height: 30px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: #A95BA6;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-size: 10px;
+}
+
+#populacja {
+    font-size: 40px;
+    color: #A95BA6;
+}
+
+#podzial {
+    font-size: 40px;
+    color: #A95BA6;
+}
+
+#obszar {
+    font-size: 40px;
+    color: #A95BA6;
+}
+
+#transport {
+    font-size: 40px;
+    color: #A95BA6;
+}
+
+#ul {
+    text-align: left;
+}
+
+li.menu {
+    display: inline;
+}
+
+li.menu a {
+    background-image: url(tab.gif);
+    width: 120px;
+    text-align: center;
+    color: #792485;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+    float: left;
+}
+
+li.menu a:hover {
+    background-image: url(tabhover.gif);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#slider {
+    margin-bottom: 5vh;
+}
+
+#slider img {
+    width: 80%;
+    height: auto;
+}
+
+video {
+    width: 80%;
+    height: auto;
+}
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #792485;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #A7A7A7;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #A7A7A7;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+}
+
+@media (max-width: 1500px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #slider img {
+        width: 95%;
+        height: auto;
+    }
+    video {
+        width: 95%;
+        height: auto;
+    }
+    #content {
+        width: 80%;
+        margin: 5px auto;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+    #description {
+        width: 80%;
+        margin: 5px auto;
+    }
+    div.fixed {
+        width: 110px;
+    }
+}
